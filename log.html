@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .box {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #5da2e8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(40, 171, 44, 0.792);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: green;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form action="">
+            <input type="email" class="box" placeholder="Enter your email" required><br><br>
+
+            <input type="password" class="box" placeholder="Enter your password" required><br><br>
+            <button>Login now</button>
+        </form>
+    </div>
+</body>
+
+</html>

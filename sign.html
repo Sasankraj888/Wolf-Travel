@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9bb;
+        }
+
+        h1{
+            text-align: center;
+            font-weight:bolder;
+            text-decoration: solid;
+            padding-top: 25px;
+        }
+
+        .container {
+            width: 100%;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #5da2e8; 
+            border-radius: 5px; 
+            box-sizing: border-box;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register Form</h1>
+    <div class="container p-4 my-5">
+        <form action="">
+            <h3>userName: &nbsp;
+                <input type="text" name="username" placeholder="Enter userName">
+            </h3><br>
+            <h3>email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="userEmail" placeholder="Enter email address">
+            </h3><br>
+            <h3>password:&nbsp;&nbsp;&nbsp;
+                <input type="password" name="password" placeholder="Enter password">
+            </h3><br>
+            <h3>mobile no. :&nbsp;
+                <input type="text" name="userPhone" placeholder="Enter phone number">
+            </h3><br>
+            <h3>Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="age" placeholder="Enter Age">
+            </h3><br>
+            <h3>Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="amount" placeholder="Enter Amount">
+            </h3>
+        </form>
+    </div>
+</body>
+
+</html>

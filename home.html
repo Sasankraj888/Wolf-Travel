@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSite</title>
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+  <div id="main">
+    <div class="main1">
+      <ul>
+        <li><a class="navlinks" href="">Home</a></li>
+        <li><a class="navlinks" href="">Profile</a></li>
+        <li><a class="navlinks" href="./log.html">Login</a></li>
+        <li><a class="navlinks" href="">Logout</a></li>
+      </ul>
+    </div>
+    <div class="main2">
+      <div class="btn1" id="myBtn">View Card</div>
+      <div class="btn2">Add Money</div>
+      <div class="btn3">Send Details</div>
+    </div>
+    <div class="gradient"></div>
+    <div class="background-image"></div>
+  </div>
+
+  <section id="myModal" class="modal">
+    <div id="m2" class="modalcont">
+      <div class="card" id="m3">
+        <div class="face front">
+          <h3 class="debit">Debit Card</h3>
+          <h3 class="bank">Assure Bank</h3>
+          <img src="https://img.icons8.com/plasticine/2x/sim-card-chip.png" class="chip" alt="Chip">
+          <h3 class="number">0123 4567 8910 1112</h3>
+          <h5 class="valid"><span>Valid thru</span><span>10/23</span></h5>
+          <h5 class="cardHolder">Sasank Raj</h5>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script>
+    const menu = document.querySelector('#main')
+    document.querySelectorAll('li').forEach((li, index) => {
+      li.onmouseover = () => {
+        menu.dataset.indexes = index;
+      }
+    })
+
+
+    var m1 = document.getElementById("myModal");
+    var m2 = document.getElementById("m2");
+    var m3 = document.getElementById("m3");
+    var btn = document.getElementById("myBtn");
+
+    btn.onclick = function () {
+      m1.style.display = "block";
+    }
+ 
+    m2.addEventListener('click',function(event){
+      if(event.target==m3){
+        return;
+      }else{
+        m1.style.display = "none";
+      }
+    });
+    
+    function stopPropagation(event){
+      event.stopPropagation();
+    }
+
+    m3.addEventListener('click',function(event){
+      event.stopPropagation();
+    })
+  </script>
+</body>
+
+</html>
